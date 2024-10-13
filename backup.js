@@ -3,7 +3,7 @@ const lighthouse = require('@lighthouse-web3/sdk');
 async function main() {
 
   const uploadResponse = await lighthouse.upload(
-  '../', 
+  '/README.md', 
   '2fc357f7.f952020a20bd4e97afa7aca88221116d')
   console.log(uploadResponse)
   const cid = uploadResponse.data.Hash;
