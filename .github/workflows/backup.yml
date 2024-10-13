@@ -23,8 +23,6 @@ jobs:
         node-version: 20.x
 
     - name: Upload to Lighthouse.storage
-      env:
-        LIGHTHOUSE_API_KEY: ${{ secrets.LIGHTHOUSE_API_KEY }}
       run: |
         npm install @lighthouse-web3/sdk
         node backup.js
